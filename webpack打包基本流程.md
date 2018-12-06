@@ -49,7 +49,7 @@ npm init -y
 
 ##### 03.安装webpack
 
-```
+```javascript
 安装webpack，在根目录下打开git输入如下命令
 npm i webpack --save-d
 然后安装webpack-cli（webpack版本<4以下不必安装）
@@ -75,7 +75,7 @@ npm i webpack-cli --save-d
 
 ##### 04.配置webpack.config.js文件
 
-```
+```javascript
 在根目录下建立webpack.config.js文件，配置
 引入webpack
 const webpack = require('webpack')
@@ -99,7 +99,7 @@ module.exports = {
 
 ![](./img/snipaste_20181206_165930.jpg)
 
-```
+```javascript
 但是由于我们有多个js文件，所以进一步优化配置代码
 先在头部引入glob，该组件可以异步读取文件
 const glob = require("glob") 
@@ -134,7 +134,7 @@ module.exports = {
 
 ##### 05.配置html-wepback-plugin
 
-```
+```javascript
 配置好该插件就可以把html文件打包进来dist文件家里面了
 
 先安装html-webpack-plugin
@@ -200,7 +200,7 @@ module.exports = {
 
 ##### 06.配置各种loader
 
-```
+```javascript
 安装js-loader
 npm i js-loader --save-d
 安装css-loader
@@ -255,7 +255,7 @@ module.exports = {
 
 ##### 07.配置独立打包css
 
-```
+```javascript
 在相应的页面的js文件中引入css文件
 
 比如在index.js文件中引入index.css
@@ -273,7 +273,7 @@ plugins:[
 
 完整的webpack.config.js配置如下：
 
-```
+```javascript
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -404,12 +404,11 @@ module.exports = {
     })
   ]
 };
-
 ```
 
 ##### 08.运行项目
 
-```
+```javascript
 先安装webpack-dev-sever
 npm i webpack-dev-server --save-d
 配置packge.json
