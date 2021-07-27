@@ -1,17 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>身边旺铺</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-  <div class="div">
-    Hello world
+
+<body style="overflow: hidden">
+  <div class="aside">
+    <div class="topOp">
+      <a href="javascript:;">收银记账</a>
+      <a href="javascript:;">会员管理</a>
+    </div>
+    <div class="middleOp">
+      <p class="title">管理</p>
+      <ul>
+        <li>
+          <a href="./page/salesList.html">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <span>销售查询</span>
+          </a>
+        </li>
+        <li>
+          <a class="active" href="/page/goods.html">
+            <span class="glyphicon glyphicon-folder-close"></span>
+            <span>商品管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="/page/staff.html">
+            <span class="glyphicon glyphicon-user"></span>
+            <span>员工管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="./page/expend.html">
+            <span class="glyphicon glyphicon-yen"></span>
+            <span>支出管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-comment"></span>
+            <span>资讯管理</span>
+          </a>
+        </li>
+        <li>
+          <a href="./page/onaccountList.html">
+            <span class="glyphicon glyphicon-record"></span>
+            <span>挂账管理</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bottomOp">
+      <p class="title">分析</p>
+      <ul>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-adjust"></span>
+            <span>销售分析</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <span>应收概览</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="setting">
+      <a href="javascript:;">
+        <span class="glyphicon glyphicon-cog"></span>
+        <span>设置</span>
+      </a>
+    </div>
   </div>
-  <button>
-    <a href="/page/b.html">to page B</a>
-  </button>
+  <div class="main">
+    <nav class="navBar clear">
+      <div class="storeName">
+        <span>一心一意</span>
+      </div>
+      <div class="logout">
+        <span class="glyphicon glyphicon-off"></span>
+        <span>退出登录</span>
+      </div>
+      <div class="shopSetting">
+        <a href="javascript:;">
+          <span class="glyphicon glyphicon-cog"></span>
+          <span>店铺设置</span>
+        </a>
+      </div>
+    </nav>
+    <div class="container" style="width: calc(100vw - 180px)">
+      <iframe id="inner-frame" src="./page/goods.html" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div class="tipsBox">
+    <span class="glyphicon glyphicon-ok"></span>
+    <span class="glyphicon glyphicon-remove"></span>
+    <div class="content">
+      <span>删除两件商品成功</span>
+    </div>
+  </div>
+
+  <div id="mask">
+    <div class="popup">
+      <div class="title">
+        <p></p>
+      </div>
+      <div class="content">
+        <p></p>
+      </div>
+      <div class="bottom">
+        <button type="button" class="btn btn-primary cancel">取消按钮</button>
+        <button type="button" class="btn btn-success comfirm">确认</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
