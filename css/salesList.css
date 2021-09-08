@@ -1,0 +1,97 @@
+.navList {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.navList a {
+  display: inline-block;
+  line-height: 35px;
+  width: 130px;
+  text-align: center;
+  color: #333;
+}
+
+.navList a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.navList .active {
+  background-color: #eee;
+}
+
+.toolsBox {
+  padding: 15px;
+}
+
+.toolsBox .inputBox {
+  float: left;
+  width: 140px;
+  position: relative;
+}
+
+.toolsBox .inputBox input {
+  height: 28px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding-right: 18px;
+  text-indent: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+
+.toolsBox .inputBox input:focus {
+  border: 1px solid #57a3f3;
+  box-shadow: 0 0 5px 0 #6eaef1;
+}
+
+.toolsBox .inputBox span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18px;
+  line-height: 28px;
+  color: #80848f;
+}
+
+.tableBox #tbody a {
+  color: #337ab7;
+}
+
+.tableBox #tbody .infoRow {
+  display: none;
+}
+
+.tableBox #tbody .selected {
+  display: table-row;
+}
+
+.tableBox #tbody .info {
+  padding: 10px 25px;
+  background-color: #f8f8f9;
+}
+
+.tableBox #tbody .info>div {
+  margin-bottom: 10px;
+}
+
+.tableBox #tbody .info>div:last-child {
+  margin-bottom: 0;
+}
+
+.tableBox #tbody .info div>div {
+  float: left;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.infomation {
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.infomation span{
+  color: red;
+}

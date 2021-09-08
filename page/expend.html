@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="../css/expend.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navList">
+    <a class="active" href="javascript:;">支出录入</a><a href="./expendAnalys.html">支出分析</a><a href="javascript:;">支出明细</a><a href="javascript:;">支出分类</a>
+  </nav>
+  <div class="mainBox">
+    <div class="items">
+      <span>支出类别：</span>
+      <div class="date dropdown">
+        <button>
+          请选择
+          <span class="caret"></span>
+        </button>
+        <ul class="optionList">
+          <li time-data='1'>今天</li>
+          <li time-data='7'>最近7天</li>
+          <li class="selected" time-data='30'>最近30天</li>
+        </ul>
+      </div>
+    </div>
+    <div class="items">
+      <span>金额：</span>
+      <div class="inputBox">
+        <input type="text" placeholder="请输入商品名称">
+      </div>
+    </div>
+    <div class="items">
+      <span>支付日期：</span>
+      <div class="inputBox">
+        <input style="width:250px" type="text" placeholder="xxxx-xx-xx xx:xx:xx">
+      </div>
+    </div>
+    <div class="items">
+      <span>备注：</span>
+      <div class="inputBox">
+        <input style="width:250px" type="text">
+      </div>
+    </div>
+    <div class="items">
+      <span></span>
+      <div>
+        <button type="button" class="btn btn-primary">保存并新建</button>
+        <button type="button" class="btn btn-success">保存</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.navList {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.navList a {
+  display: inline-block;
+  line-height: 35px;
+  width: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.navList a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.navList .active {
+  background-color: #eee;
+}
+
+.top {
+  position: relative;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.top .t-left {
+  position: absolute;
+  width: 270px;
+  padding: 50px 30px;
+  padding-right: 0px;
+}
+
+.top .t-left p {
+  height: 50px;
+  line-height: 50px;
+}
+
+.top .t-left p span:first-child {
+  font-weight: 600;
+}
+
+.top .t-left p span:last-child {
+  color: #C80032;
+}
+
+.top .t-right {
+  padding-left: 270px;
+  height: 250px;
+}
+
+.middle,
+.bottom {
+  padding: 20px 30px;
+}
+
+.middle .toolBox {
+  margin-bottom: 20px;
+}
+
+.middle .toolBox .inputBox {
+  display: inline-block;
+}
+
+.middle .toolBox .inputBox input {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.middle .toolBox .inputBox input:focus {
+  border: 1px solid #57a3f3;
+  box-shadow: 0 0 5px 0 #6eaef1
+}

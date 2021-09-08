@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/record.css">
+</head>
+<body>
+  <nav class="navList">
+    <a href="./goods.html">商品库存</a><a href="./goodsCate.html">商品分类</a><a class="active" href="javascript:;">出入库记录</a>
+  </nav>
+  <div class="toolsBox clear">
+    <div class="inputBox clear">
+      <input type="text" placeholder="请输入商品名称">
+      <span class="glyphicon glyphicon-search"></span>
+    </div>
+    <div class="date dropdown">
+      <button>
+        时间范围
+        <span class="caret"></span>
+      </button>
+      <ul class="optionList">
+        <li time-data='1'>今天</li>
+        <li time-data='7'>最近7天</li>
+        <li class="selected" time-data='30'>最近30天</li>
+      </ul>
+    </div>
+    <div class="type dropdown">
+      <button>
+        操作类型
+        <span class="caret"></span>
+      </button>
+      <ul class="optionList">
+        <li class="selected" type-data='0'>全部</li>
+        <li type-data='1'>入库</li>
+        <li type-data='2'>出库</li>
+        <li type-data='3'>其他</li>
+      </ul>
+    </div>
+    <div id="page">
+      <button class="pageOne">第一页</button>
+      <button class="pre">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+      <button class="number pageActive">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </button>
+      <button class="pageLast">最尾页</button>
+    </div>
+  </div>
+  <div class="tableBox">
+    <table>
+      <thead>
+        <th>时间</th>
+        <th>商品名称</th>
+        <th>商品分类</th>
+        <th>商品进价</th>
+        <th>发生金额</th>
+        <th>原始数量</th>
+        <th>变动数量</th>
+        <th>剩余数量</th>
+        <th>操作人员</th>
+        <th>备注</th>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+    <div class="noData">暂无数据</div>
+  </div>
+</body>
+</html>

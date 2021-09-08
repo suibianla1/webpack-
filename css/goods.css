@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+.navList {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.navList a {
+  display: inline-block;
+  line-height: 35px;
+  width: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.navList a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.navList .active {
+  background-color: #eee;
+}
+
+.toolsBox {
+  padding: 15px;
+}
+
+.toolsBox .addGoods {
+  background-color: #f90;
+  color: #fff;
+  border: 1px solid #f90;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: left;
+}
+
+.toolsBox .inputBox {
+  width: 180px;
+  float: left;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.toolsBox .inputBox input {
+  width: 160px;
+  float: left;
+  border: 0;
+  outline: none;
+  height: 30px;
+  text-indent: 10px;
+}
+
+.toolsBox .inputBox span {
+  float: left;
+  display: block;
+  width: 15px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.addGoodsBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.addGoodsBox .addBox{
+  width: 400px;
+  background: #fff; 
+  margin: 70px auto;
+  padding: 50px 30px;
+  border-radius: 8px;
+}
+

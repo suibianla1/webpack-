@@ -1,0 +1,108 @@
+.navList {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.navList a {
+  display: inline-block;
+  line-height: 35px;
+  width: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.navList a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.navList .active {
+  background-color: #eee;
+}
+
+.mainBox {
+  padding: 50px 100px;
+}
+
+.mainBox .items>span {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+.mainBox .items {
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.mainBox .items>div {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.mainBox .items .dropdown {
+  position: relative;
+}
+
+.mainBox .items .dropdown button {
+  width: 180px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+.mainBox .items .dropdown .optionList {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 180px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  z-index: 99;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+.mainBox .items .dropdown .show {
+  display: block;
+}
+
+.mainBox .items .dropdown .optionList li {
+  padding: 0 15px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.mainBox .items .dropdown .optionList li:hover {
+  background-color: #eee;
+}
+
+.mainBox .items .dropdown .optionList .selected {
+  background-color: #2d8cf0 !important;
+  color: #fff;
+}
+
+.mainBox .items .inputBox {
+  position: relative;
+}
+
+.mainBox .items .inputBox input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 28px;
+  outline: 0;
+  width: 180px;
+  text-indent: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.mainBox .items .inputBox input:focus {
+  border: 1px solid #2d8cf0;
+  box-shadow: 0 0 5px 0 #59a2f0;
+}
+
+.mainBox .items >div .btn{
+  padding: 4px 12px;
+}

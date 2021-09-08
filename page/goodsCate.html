@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>goodsCate.html</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/goodsCate.css">
+</head>
+
+<body> 
+  <nav class="navList">
+    <a href="./goods.html">商品库存</a><a class="active" href="javascript:;">商品分类</a><a href="./record.html">出入库记录</a>
+  </nav>
+  <div class="toolsBox">
+    <button class="addCate">
+      <span class="glyphicon glyphicon-plus"></span>
+      <span>添加分类</span>
+    </button>
+    <div id="page">
+      <button class="pageOne">第一页</button>
+      <button class="pre">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+      <button class="number pageActive">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </button>
+      <button class="pageLast">最尾页</button>
+    </div>
+  </div>
+  <div class="mainBox">
+    <div class="cateContainer">
+      <div class="cateTitle">
+        <div class="left"><span>分类</span></div>
+        <div class="right"><span>操作</span></div>
+      </div>
+      <div class="cateList">
+        <!-- <div class="cateItem">
+          <div class="tiemTitle">
+            <div class="cataName">
+              <span class="glyphicon glyphicon-triangle-bottom"></span>
+              <span class="glyphicon glyphicon-triangle-right"></span>
+              <span class="name" style="margin-left: 10px;">擦看了看</span>
+            </div>
+            <div class="itemOperation">
+              <div class="info">
+                <span class="smallCate">0 个小分类</span>
+                <span class="goodsNum">3 种商品</span>
+              </div>
+              <div class="operation">
+                <p class="changeName">
+                  <span class="glyphicon glyphicon-edit"></span>
+                  <span>修改名称</span>
+                </p>
+                <p class="delCate">
+                  <span class="glyphicon glyphicon-trash"></span>
+                  <span>删除大分类</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="itemContent">
+            <ul class="clear">
+              <li>
+                <p class="addIcon"><span class="glyphicon glyphicon-plus"></span></p>
+                <p class="addSmallCate">添加小分类</p>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 对话框 -->
+  <div id="mask">
+    <div class="popup">
+      <div class="title">修改分类名称</div>
+      <div class="middle">
+        <span>分类名称：</span>
+        <input class="cateName" type="text">
+      </div>
+      <div class="bottom">
+        <button type="button" class="btn btn-primary cancel">取消</button>
+        <button type="button" class="btn btn-success comfirm">确认</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

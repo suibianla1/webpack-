@@ -1,0 +1,172 @@
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.clear:after {
+  content: '';
+  clear: both;
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.clear {
+  zoom: 1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.tableBox {
+  padding: 0 15px 15px;
+  position: relative;
+  min-height: 400px;
+}
+
+.tableBox table {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.tableBox table tr {
+  height: 40px;
+}
+
+.tableBox table tr:hover {
+  background-color: #ebf7ff;
+}
+
+.tableBox table th {
+  background-color: #f8f8f9;
+}
+
+.tableBox table th,
+.tableBox table td {
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tableBox table td div {
+  line-height: 40px;
+  border-bottom: 1px solid #dddee1;
+}
+
+.tableBox table td div:last-child {
+  border-bottom: none;
+}
+
+.tableBox table td a {
+  cursor: pointer;
+}
+
+.tableBox .noData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: none;
+}
+
+/* 弹窗 */
+
+#mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#mask .popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#mask .popup p {
+  margin-bottom: 0;
+}
+
+#mask .popup .title {
+  height: 22px;
+}
+
+#mask .popup .title p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#mask .popup .content {
+  height: 123px;
+  text-align: center;
+  line-height: 105px;
+  font-size: 15px;
+}
+
+#mask .popup .bottom {
+  text-align: center;
+}
+
+#mask .popup .bottom button {
+  border: 0;
+  height: 25px;
+  color: #fff;
+  width: 70px;
+  padding: 0;
+}
+
+#mask .popup .bottom .cancel {
+  margin-right: 15px;
+}
+
+/* 分页 */
+
+#page {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+
+#page button {
+  height: 30px;
+  border: none;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+#page .number,
+.toolsBox .page .pre,
+.toolsBox .page .next {
+  width: 30px;
+  margin: 0 4px;
+}
+
+#page .pageActive {
+  background-color: #2d8cf0;
+  color: #fff;
+}

@@ -1,0 +1,95 @@
+.navList {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.navList a {
+  display: inline-block;
+  line-height: 35px;
+  width: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.navList a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.navList .active {
+  background-color: #eee;
+}
+
+.toolsBox {
+  padding: 15px;
+}
+
+.toolsBox .dropdown {
+  float: left;
+  position: relative;
+  margin: 0 10px;
+}
+
+.toolsBox .dropdown button {
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+.toolsBox .dropdown .optionList {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 120px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  z-index: 99;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+.toolsBox .dropdown .show {
+  display: block;
+}
+
+.toolsBox .dropdown .optionList li {
+  padding: 0 15px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.toolsBox .dropdown .optionList li:hover {
+  background-color: #eee;
+}
+
+.toolsBox .dropdown .optionList .selected {
+  background-color: #2d8cf0 !important;
+  color: #fff;
+}
+
+.toolsBox .inputBox {
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.toolsBox .inputBox input {
+  height: 28px;
+  border: 0;
+  outline: 0;
+  width: 180px;
+  float: left;
+  text-indent: 10px;
+}
+
+.toolsBox .inputBox span {
+  float: left;
+  display: block;
+  width: 18px;
+  line-height: 28px
+}

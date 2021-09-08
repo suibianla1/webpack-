@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/staff.css">
+</head>
+<body>
+  <nav class="navList">
+    <a class="active" href="javascript:;">员工列表</a>
+  </nav>
+  <div class="toolsBox clear">
+    <button class="addStaff">新增员工</button>
+    <div class="dropdown">
+      <button>
+        员工状态
+        <span class="caret"></span>
+      </button>
+      <ul class="optionList">
+        <li class="selected" status-data='2'>全部</li>
+        <li status-data='1'>在职</li>
+        <li status-data='0'>离职</li>
+      </ul>
+    </div>
+    <div class="inputBox clear">
+      <input type="text" placeholder="请输入员工姓名">
+      <span class="glyphicon glyphicon-search" ></span>
+    </div>
+    <div id="page"></div>
+  </div>
+  <div class="tableBox">
+    <table>
+      <thead>
+        <th style="width: 45px">
+          <input class="checkAll" type="checkbox">
+        </th>
+        <th>状态</th>
+        <th>姓名</th>
+        <th>账号</th>
+        <th style="width: 200px">操作</th>
+      </thead>
+      <tbody id="tbody">
+        <!-- <tr>
+          <td style="width: 45px">
+            <input type="chechbox" class="checkItem">
+          </td>
+          <td></td>
+          <td></td>
+          <td id-data="">
+            <a href="javascript:;">修改</a>
+            <a href="javascript:;">恢复</a>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+    <div class="noData">暂无数据</div>
+  </div>
+  <div id="mask">
+    <div class="popup changeInfo">
+      <div class="title">
+        <p>添加员工</p>
+      </div>
+      <div class="content">
+        <div class="name">
+          <span>姓&nbsp;&nbsp;&nbsp;名：</span>
+          <input type="text">
+        </div>
+        <div class="account">
+          <span>账&nbsp;&nbsp;&nbsp;号：</span>
+          <input type="text">
+        </div>
+        <div class="password">
+          <span>密&nbsp;&nbsp;&nbsp;码：</span>
+          <input type="password">
+        </div>
+        <div class="identify">
+          <span>身份证：</span>
+          <input type="text">
+        </div>
+      </div>
+      <div class="bottom">
+        <button type="button" class="btn btn-primary cancel">取消</button>
+        <button type="button" class="btn btn-success comfirm">确认</button>
+      </div>
+    </div>
+
+    <div class="popup changeStatus">
+      <div class="title">
+        <p>修改员工状态</p>
+      </div>
+      <div class="content">
+        <p class="info">是否离职该员工？</p>
+        <p>
+          <span>管理员密码</span>
+          <input class="user_pwd" type="text">
+        </p>
+      </div>
+      <div class="bottom">
+        <button type="button" class="btn btn-primary cancel">取消</button>
+        <button type="button" class="btn btn-success comfirm">确认</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

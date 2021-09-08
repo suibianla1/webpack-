@@ -1,0 +1,134 @@
+.title h3 {
+  padding-left: 15px;
+}
+
+.mainBox {
+  padding: 20px 70px;
+}
+
+.mainBox .item {
+  padding-bottom: 30px;
+}
+
+.mainBox .item>span {
+  float: left;
+  line-height: 30px;
+  width: 75px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.mainBox .item .dropdown {
+  float: left;
+  position: relative;
+  margin-right: 10px;
+}
+
+.mainBox .item .dropdown button {
+  width: 313px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 26px;
+  text-align: left;
+  color: #495060;
+}
+
+.mainBox .item .dropdown button .caret {
+  float: right;
+  margin-top: 12px;
+}
+
+.mainBox .item .dropdown .optionList {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 313px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  z-index: 99;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+.mainBox .item .dropdown .show {
+  display: block;
+}
+
+.mainBox .item .dropdown .optionList li {
+  padding: 0 15px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.mainBox .item .dropdown .optionList li:hover {
+  background-color: #eee;
+}
+
+.mainBox .item .dropdown .optionList .selected {
+  background-color: #2d8cf0 !important;
+  color: #fff;
+}
+
+.mainBox .item input {
+  border: 1px solid #ccc;
+  height: 28px;
+  border-radius: 4px;
+  width: 312px;
+  text-indent: 5px;
+}
+
+.mainBox .item .person {
+  width: 520px;
+  float: left;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.mainBox .item .person .title{
+  padding-right: 40px;
+} 
+
+.mainBox .item .person .title p {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.mainBox .item .person .inputs {
+  padding-bottom: 20px;
+}
+
+.mainBox .item .person .inputs input {
+  width: 228px;
+}
+
+.mainBox .item .person span {
+  color: red;
+}
+
+.mainBox .item .person .inputs .del {
+  margin-left: 5px;
+  cursor: default;
+}
+
+.mainBox .item .radioBox {
+  line-height: 30px;
+}
+
+.mainBox .item .radioBox input {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  color: #2d8cf0;
+  margin-top: 0;
+}
+
+.mainBox .item.company {
+  display: block;
+}
+
+.mainBox .item.personal {
+  display: none;
+}

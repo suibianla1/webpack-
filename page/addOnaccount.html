@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/addOnaccount.css">
+</head>
+<body>
+  <div class="title">
+    <h3>添加挂账主体</h3>
+  </div>
+  <div class="mainBox">
+    <div class="item clear">
+      <span>挂账类型</span>
+      <div class="type dropdown">
+        <button>
+          挂账类型
+          <span class="caret"></span>
+        </button>
+        <ul class="optionList">
+          <li data-type='1'>个人</li>
+          <li class="selected" data-type='2'>公司</li>
+        </ul>
+      </div>
+    </div>
+    <div class="item personal clear">
+      <span>挂账人</span>
+      <div class="name">
+        <input type="text">
+      </div>
+    </div>
+    <div class="item personal clear">
+      <span>联系电话</span>
+      <div class="phone">
+        <input type="text">
+      </div>
+    </div>
+    <div class="item clear company">
+      <span>挂账公司</span>
+      <div class="inputBox">
+        <input class="companyName" type="text" placeholder="挂账公司名称">
+      </div>
+    </div>
+    <div class="item clear company">
+      <span>挂账人</span>
+      <div class="person">
+        <div class="title clear">
+          <p><span>*</span>姓名</p>
+          <p><span>*</span>联系电话</p>
+        </div>
+        <div class="containerB">
+          
+        </div>
+        <div class="button">
+          <button type="button" class="btn btn-primary addOnaccount">添加</button>
+        </div>
+      </div>
+    </div>
+    <div class="item clear">
+      <span>挂账限额</span>
+      <div class="radioBox">
+        <input type="radio" checked>
+        不限金额
+      </div>
+    </div>
+    <div class="item clear">
+      <span style="color: #fff;">按钮</span>
+      <div class="btns">
+        <button type="button" class="btn btn-success submit">保存</button>
+        <button type="button" class="btn btn-primary goback">返回</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

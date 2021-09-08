@@ -1,0 +1,172 @@
+.navList {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.navList a {
+  display: inline-block;
+  line-height: 35px;
+  width: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.navList a:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.navList .active {
+  background-color: #eee;
+}
+
+.toolsBox {
+  padding: 15px;
+}
+
+.toolsBox .addCate {
+  background-color: #f90;
+  color: #fff;
+  border: 1px solid #f90;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.mainBox {
+  padding: 0 15px;
+}
+
+.mainBox .cateContainer .cateTitle {
+  height: 34px;
+  background-color: #ECF3FC;
+  border-bottom: 2px solid #C8DDF6;
+}
+
+.mainBox .cateContainer .cateTitle>div {
+  width: 50%;
+  float: left;
+  line-height: 34px;
+}
+
+.mainBox .cateContainer .cateTitle .left {
+  padding-left: 15px;
+}
+
+.mainBox .cateContainer .cateTitle .right {
+  text-align: center;
+}
+
+.mainBox .cateContainer .cateItem {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.mainBox .cateContainer .cateItem.active {
+  background-color: #f5f5f5;
+}
+
+.mainBox .cateContainer .cateItem:hover {
+  background: #f5f5f5;
+}
+
+.mainBox .cateContainer .cateItem .tiemTitle {
+  height: 20px;
+  line-height: 20px;
+}
+
+.mainBox .cateContainer .cateItem .tiemTitle>div {
+  width: 50%;
+  float: left;
+}
+
+.mainBox .cateContainer .cateItem .tiemTitle .glyphicon-triangle-bottom {
+  display: none;
+}
+
+.mainBox .cateContainer .cateItem .tiemTitle .glyphicon-triangle-right {
+  display: inline-block;
+}
+
+.mainBox .cateContainer .tiemTitle .itemOperation>div {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.mainBox .cateContainer .tiemTitle .itemOperation .info span:first-child {
+  margin-right: 15px;
+}
+
+.mainBox .cateContainer .tiemTitle .itemOperation .operation p {
+  width: 50%;
+  float: left;
+}
+
+.mainBox .cateContainer .itemContent {
+  padding: 10px;
+  display: none;
+}
+
+.mainBox .cateContainer .itemContent ul {
+  margin-bottom: 0;
+}
+
+.mainBox .cateContainer .itemContent ul li {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-top: 3px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-right: 15px;
+  float: left;
+  background-color: #fff;
+}
+
+.mainBox .cateContainer .itemContent ul li .addIcon {
+  height: 45px;
+  line-height: 45px;
+  margin: 0;
+  text-align: center;
+}
+
+.mainBox .cateContainer .itemContent ul li .addSmallCate {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.mainBox .cateContainer .itemContent ul li>div {
+  text-align: center;
+  line-height: 24px;
+}
+
+.mainBox .cateContainer .itemContent ul li button {
+  line-height: 14px;
+  padding: 1px 4px;
+  font-size: 12px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+#mask .popup {
+  width: 400px;
+}
+
+#mask .popup .middle {
+  height: 123px;
+  text-align: center;
+  line-height: 120px;
+}
+
+#mask .popup .middle .cateName {
+  line-height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-indent: 10px;
+  width: 200px;
+}

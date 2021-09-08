@@ -1,0 +1,168 @@
+html,
+body {
+  height: 100%;
+}
+
+.aside {
+  float: left;
+  height: 100%;
+  width: 180px;
+  background-color: #2f4050;
+}
+
+.aside .active {
+  background-color: #213140;
+  color: #fff !important;
+}
+
+.aside .topOp {
+  height: 80px;
+}
+
+.aside .topOp a {
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: #ddd;
+  text-align: center;
+  line-height: 80px;
+}
+
+.aside .topOp a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aside .middleOp .title,
+.aside .bottomOp .title {
+  height: 35px;
+  padding: 0 15px;
+  background-color: #4f5c6b;
+  color: #c2c2c2;
+  line-height: 35px
+}
+
+.aside .middleOp ul li,
+.aside .bottomOp ul li {
+  height: 35px;
+  background-color: #2f4050;
+}
+
+.aside .middleOp ul li a,
+.aside .bottomOp ul li a,
+.aside .setting a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  color: #c2c2c2;
+  line-height: 35px;
+}
+
+.aside .topOp a:hover,
+.aside .middleOp ul li a:hover,
+.aside .bottomOp ul li a:hover,
+.aside .setting a:hover {
+  color: #fff;
+  background-color: #213140;
+  text-decoration: none;
+}
+
+.aside .setting {
+  border-top: 1px solid #c2c2c2;
+  height: 40px;
+  background-color: #2f4050;
+}
+
+.aside .setting a {
+  line-height: 40px;
+}
+
+.main {
+  padding-left: 180px;
+  min-height: 100%;
+  background-color: #f8f9fb;
+}
+
+.main .navBar {
+  padding-left: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+}
+
+.main .navBar>div {
+  height: 50px;
+  line-height: 50px;
+}
+
+.main .navBar .storeName {
+  float: left;
+}
+
+.main .navBar .storeName span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main .navBar .shopSetting,
+.main .navBar .logout {
+  float: right;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main .navBar .shopSetting:hover,
+.main .navBar .logout:hover {
+  background-color: #eee;
+}
+
+.main .navBar .shopSetting a:hover {
+  text-decoration: none;
+}
+
+.main .container {
+  padding-top: 15px;
+}
+
+.main #inner-frame {
+  width: 100%;
+  background-color: #fff;
+}
+
+.tipsBox {
+  position: absolute;
+  top: 100px;
+  right: -250px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 #4c4f52;
+  padding: 10px;
+}
+
+.tipsBox>span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.tipsBox .glyphicon-ok {
+  color: #95d095;
+  display: block;
+}
+
+.tipsBox .glyphicon-remove {
+  color: #e00808;
+  display: none;
+}
+
+.tipsBox .content {
+  min-width: 90px;
+  margin-left: 25px;
+  line-height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/salesList.css">
+</head>
+<body>
+  <nav class="navList">
+    <a class="active" href="javascript:;">销售列表</a><a href="javascript:;">线上销售列表</a><a href="javascript:;">无人货架销售列表</a>
+  </nav>
+  <div class="toolsBox clear">
+    <div class="inputBox clear">
+      <input type="text" placeholder="请输入商品名称">
+      <span class="glyphicon glyphicon-search"></span>
+    </div>
+    <div id="page">
+      <button class="pageOne">第一页</button>
+      <button class="pre">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+      <button class="number pageActive">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </button>
+      <button class="pageLast">最尾页</button>
+    </div>
+  </div>
+  <div class="tableBox">
+    <table>
+      <thead>
+        <th>&nbsp;&nbsp;&nbsp;</th>
+        <th>商品数量</th>
+        <th>订单总价</th>
+        <th>订单号</th>
+        <th>流水单号</th>
+        <th>销售日期</th>
+        <th>收款方式</th>
+        <th>会员名称</th>
+        <th>操作</th>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+    <div class="noData">暂无数据</div>
+  </div>
+  <div class="infomation">
+    <p>合计&nbsp;<span class="count">0</span>&nbsp;笔 | 数量&nbsp;<span class="num">0</span> | 共￥<span class="total">00.00</span></p>
+  </div>
+</body>
+</html>
